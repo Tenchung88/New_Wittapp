@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">WittApp_YWCA</string>
+    <string name="training">YWCA Toronto offers a range of free and paid employment and
+    training programs</string>
+    <string name="girlscenter">Explore educational and fun program and services for girls.</string>
+    <string name="supportservice">Healing from trauma and develop healthy coping skills</string>
+    <string name="Paretingcare">Shelter and afety for women fleeing violence</string>
 </resources>

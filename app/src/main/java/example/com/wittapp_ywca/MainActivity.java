@@ -12,10 +12,10 @@ import android.widget.TextView;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
-    int[] image ={R.drawable.imagestraining,R.drawable.imagesgirlscentre,R.drawable.imagessupportservice,R.drawable.imagespublic};
+   int[] image ={R.drawable.imagestraining,R.drawable.imagesgirlscentre,R.drawable.imagessupportservice,R.drawable.imagespublic};
    String[] title ={"Training","Girls Center","Support Service","Parentingand Care"};
-    String[] description ={"YWCA Toronto offers a range of free and paid employment and training programs.","Explore educational and fun programs and services for girls.",
-            "Heal from trauma and develop healthy coping skills.", "Shelter and safety for women fleeing violence."};
+   String[] description ={"YWCA Toronto offers a range of free and paid employment and training programs.","Explore educational and fun programs and services for girls.",
+           "Heal from trauma and develop healthy coping skills.", "Shelter and safety for women fleeing violence."};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
