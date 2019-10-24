@@ -12,10 +12,11 @@ import android.widget.TextView;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
-   int[] image ={R.drawable.imagestraining,R.drawable.imagesgirlscentre,R.drawable.imagessupportservice,R.drawable.imagespublic};
-   String[] title ={"Training","Girls Center","Support Service","Parentingand Care"};
-   String[] description ={"YWCA Toronto offers a range of free and paid employment and training programs.","Explore educational and fun programs and services for girls.",
-           "Heal from trauma and develop healthy coping skills.", "Shelter and safety for women fleeing violence."};
+   int[] image ={R.drawable.ywcalogof,R.drawable.ywcalogof,R.drawable.ywcalogof};
+   String[] title ={"YWCA","IBM","YWCA"};
+    String[] time ={"2:00pm","2:00pm","3:00pm"};
+   String[] description ={"YWCA Toronto offers a range of free and paid training programs.....","Explore educational and fun.....",
+           "The success stories comes from......"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position==0)
+                {
+                    Intent i = new Intent(MainActivity.this,SecondActivity.class);
+                    startActivity(i);
+                }
 
 
 
@@ -58,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
             ImageView img = (ImageView) convertView.findViewById(R.id.speaker7);
             TextView mytext = (TextView) convertView.findViewById(R.id.textView_name7);
             TextView mydescription = (TextView) convertView.findViewById(R.id.textView_tib7);
+            TextView time1 = (TextView) convertView.findViewById(R.id.timeview);
+            time1.setText(time[position]);
             img.setImageResource(image[position]);
             mytext.setText(title[position]);
             mydescription.setText(description[position]);
